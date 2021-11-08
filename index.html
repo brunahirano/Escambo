@@ -26,7 +26,7 @@
   <!-- Header-->
   <nav class="navbar navbar-expand-lg text-white box">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/logo-index.png" class="img-logo"></a>
+      <a class="navbar-brand" href="index.html"><img src="img/logo-index.png" class="img-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="bi bi-sort-down-alt"></i></span>
       </button>
@@ -40,17 +40,17 @@
               Doações
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="index.html#togle-section">Entenda o cashback</a></li>
+              <li><a class="dropdown-item" href="#founders">Conheça os fundadores</a></li>
+              <li><a class="dropdown-item" href="#beneficiadas">Instituições beneficiadas</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Fale conosco </a>
+            <a class="nav-link" href="cadastro.html"> Fale conosco </a>
           </li>
           <li class="nav-item mx-4">
               <div class="d-flex justify-content-center">
-                <input type="button" class="btn-full" value="Cadastro">
+                <a href="cadastro.html"><input type="button" class="btn-full" value="Cadastro"></a>
                 <input type="button" class="btn-commum" value="Entre" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
           </li>
@@ -100,8 +100,8 @@
 
 
         <form action="" class="d-flex">
-          <button id="donation-btn-full">FAÇA SUA DOAÇÃO</button>
-          <button id="donation-btn">CONHEÇA AS INSTITUIÇÕES PARCEIRAS</button>
+          <a href="cadastro.html"><button id="donation-btn-full">FAÇA SUA DOAÇÃO</button></a>
+          <a href="#beneficiadas"><button id="donation-btn">CONHEÇA AS INSTITUIÇÕES PARCEIRAS</button></a>
         </form>
 
       </div>
@@ -188,7 +188,7 @@
 
   <!-- seção com o togle e a tabela da relação de doações -->
 
-  <section class="container-fluid d-flex justify-content-center togle-section p-0">
+  <section class="container-fluid d-flex justify-content-center togle-section p-0" id="togle-section">
     <div class="row d-flex align-items-center togle-row p-0">
       <div class="col togle-col p-0">
         <div class="volunteer-img-container">
@@ -367,6 +367,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- Implementação do VLibras para inclusão de pessoas com deficiência auditiva-->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app')
+  </script>
   <!-- Bootstrap JS plugin -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

@@ -18,8 +18,8 @@
 
 <body>
 <main class="container-fluid p-0">
- <!-- Header-->
- <nav class="navbar navbar-expand-lg text-white box">
+<!-- Header-->
+<nav class="navbar navbar-expand-lg text-white box">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="img/logo-index.png" class="img-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,18 +35,18 @@
               Doações
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="index.html#togle-section">Entenda o cashback</a></li>
+              <li><a class="dropdown-item" href="#founders">Conheça os fundadores</a></li>
+              <li><a class="dropdown-item" href="#beneficiadas">Instituições beneficiadas</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Fale conosco </a>
+            <a class="nav-link" href="cadastro.html"> Fale conosco </a>
           </li>
           <li class="nav-item mx-4">
               <div class="d-flex justify-content-center">
-                <input type="button" class="btn-full" value="Cadastro">
-                <input type="button" class="btn-commum" value="Entre">
+                <a href="cadastro.html"><input type="button" class="btn-full" value="Cadastro"></a>
+                <input type="button" class="btn-commum" value="Entre" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
           </li>
         </ul>
@@ -54,6 +54,36 @@
     </div>
 
   </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img  src="img/LOGO_Prancheta 1 cópia 12 1.png"class="modal-title" id="staticBackdropLabel" style="max-width: 250px;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <h1>Acess</h1>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Usuário" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
+          </div>
+                </div>
+                <div class="modal-footer">
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+          <a href="painel.html"><button type="button" class="btn btn-primary">Entrar</button></a>
+                </div>
+        </form>
+    </div>
+  </div>
+</div>
         <!--Carrossel-->
         <div id="carouselExampleIndicators" class="carousel slide carrossel" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -201,7 +231,7 @@
         </div>
 
         <!--SEÇÃO FUNDADORES-->
-        <div class="container">
+        <div class="container" id="founders">
             <h1 class="titulos text-center">Fundadores</h1>
         </div>
         <div class="container my-3 mb-5">
@@ -240,7 +270,7 @@
         </div>
 
         <!--Seção Insituições beneficiadas-->
-        <div class="container mt-5">
+        <div class="container mt-5" id="beneficiadas">
             <h1 class="text-center titulos">Intituições benecifiadas</h1>
         </div>
         <div>
