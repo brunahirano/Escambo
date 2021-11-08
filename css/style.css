@@ -423,6 +423,7 @@ form {
 .cardMenor > .row {
     width: 100%;
     justify-content: center;
+    margin: auto !important;
 }
 
 .cardMenor:hover {
