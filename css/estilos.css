@@ -1,0 +1,241 @@
+/* HUGO 🤷🏻‍♂️ */
+
+/* Estilização dos itens da carteira */
+#img1 {
+   
+    width: 48px;
+    height: 48px;
+    left: 10px;
+    margin-top: 7%;
+}
+
+.imgCard {
+    
+    width: 20%;
+    left: 33.33%;
+    right: 33.33%;
+    top: 41.67%;
+    bottom: 41.67%;
+}
+
+.carteira{
+    box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.25);
+}
+
+.carteira:hover{
+    box-shadow: 10px 10px 10px rgba(160, 163, 189, 0.25);
+}
+
+
+/* Fim da Estilização dos itens da carteira */ 
+
+/* Estilização dos itens cards sobre as ações na plataforma */
+.cardMain {
+   
+    border-radius: 10px;
+    box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.25);
+}
+
+.cardMain:hover{
+    box-shadow: 10px 10px 10px rgba(160, 163, 189, 0.25);
+}
+
+.cardIcon {
+    position: relative;
+    background-color: #EAEDFA;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.icon {
+    position: absolute;
+    font-size: 30px;
+    bottom: 18px;
+    right: 20px;
+}
+
+
+/* Fim da Estilização dos itens da plataforma */
+
+
+
+/* Estilização dos itens dos Cards dos benefícios */
+.imgCardGrande {
+    width: 200px;
+    height: 120px;
+}
+
+.cardGrande {
+    max-width: 420px;
+    height: 428px;
+    border-radius: 10px;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.144);
+}
+
+.cardGrande:hover{
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.384);
+}
+
+
+.desconto {
+    width: 412px;
+    height: 58px;
+    font-size: 17px;
+}
+
+.termos {
+    width: 412px;
+    height: 15px;
+}
+
+.termosDeUso{
+    text-decoration: none;
+    color: #4A276F;
+    font-weight: bolder;
+}
+
+.ativar {
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #4A276F;
+    border: solid #4A276F;
+   
+}
+
+
+
+.disponibilidade {
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #F59D0E;
+    border: solid #F59D0E;
+}
+
+.disponibilidade:hover{
+    box-shadow: 10px 10px 10px rgba(160, 163, 189, 0.25);
+}
+
+
+.beneficio {
+    width: 209px;
+    text-align: center;
+    border-radius: 10px;
+    height: 43px;
+    font-family: 'Poppins';
+  
+    color: #4A276F;
+    font-size: 20px;
+    border: solid #4A276F;
+}
+
+
+.beneficio:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #3a1f57;
+    border: none;
+}
+
+div {
+   
+}
+
+div.col{
+
+    width: 300px !important;
+
+}
+
+/* Fim da Estilização dos itens do Card sobre benefícios */
+
+
+/* Estilização das imagens dos parceiros */ 
+.parceiros{
+   
+    width: 130px;
+}
+
+.parceiros2{
+    width: 150px;
+}
+
+/* fim da Estilização das imagens dos Parceiros */
+
+
+/* Estilização das fontes */
+.titulos{
+
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.letras{
+    font-family: 'Montserrat';
+}
+/*Fim da Estilização dos itens */
+
+
+/* Estilização das Modais */
+.minhaClasse{
+    background-color: #F59D0E;
+    
+    color: white;
+}
+
+.minhaClasse1{
+   
+  color: #313131;
+
+}
+
+.editar{
+    background-color: #4A276F;
+    font-size: large;
+    
+}
+
+
+.ativar1 {
+    width: 120px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 100px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #4A276F;
+    border: solid #4A276F;
+   
+}
+
+.ativar1:hover{
+    color:white;
+}
+
+.disponibilidade1 {
+    width: 120px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 100px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #F59D0E;
+    border: solid #F59D0E;
+}
+
+.disponibilidade1:hover{
+    color: white;
+}
+
+/* Fim da Estilização das modais */
+

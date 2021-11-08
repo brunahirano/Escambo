@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+* {
+  font-family: Poppins;
+}
+
+:root {
+  --purple: #4a276f;
+  --light-gren: #13ada4;
+  --medium-grey: #313131;
+  --orange: #f59d0e;
+}
+
+input {
+  border-style: none none solid none;
+  border-color: var(--purple);
+}
+
+.text-pre {
+  white-space: pre-line;
+}
+
+.card {
+  border: none;
+}
+
+.card-1 {
+  background-color: var(--purple);
+  color: white;
+}
+
+.btnRadio{
+  color: var(--purple);
+  border-color: #313131;
+}
+
+.btnRadio:hover{
+  background-color: #4a276f;
+  color: white;
+}
+
+.btnForm{
+  background-color: #4a276f;
+  color: white;
+}
+
+.btnForm:hover{
+  background-color: #64428a;
+  color: white;
+}
+
+#divDate{
+  width: 50%;
+}
+
+.parceiros{
+
+  width: 130px;
+}
+
+.parceiros2{
+  width: 150px;
+}
+
+@media (max-width: 480px) {
+  form{
+    width: 80%;
+  }
+    #divDate{
+    width: 100%;
+    margin-top: 10px;
+  }
+  input{
+    width: 100%;
+  }
+  .btnForm{
+    width: 40%;
+  }
+}
+
+@media(max-width: 320px){
+  .btnRadio{
+    font-size: 15px;
+    padding: 0;
+  }
+}

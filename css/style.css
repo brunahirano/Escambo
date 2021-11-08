@@ -1,0 +1,592 @@
+/* Fontes usadas ao longo do documento, importadas do site: Googlefonts.com */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Variáveis globais */
+:root {
+ --main-color: #4A276F;
+ --secundary-color: #F59D0E;
+ --terciary-color: #13ADA4;
+ --text-color: #313131;
+ --line-color: #D9D9D9;   
+ --title-font: 'Poppins';
+ --body-font: 'Montserrat';
+}
+
+*:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family:var(--title-font);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-size: clamp(1em, 1em + 1vh, 1.5em);
+}
+.box {
+    background-color: var(--main-color);
+}
+
+
+.img-logo {
+    width: 200px;
+    padding: 10px;
+}
+.img-logo2 {
+    width: 200px;
+    /* padding: 10px; */
+}
+
+.nav-link {
+    color: #fff;
+    padding: 10px;;
+}
+.nav-link:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link:active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-full,
+.btn-commum{
+    width: 100px;
+    margin-right: 27px;
+    border: 0.5px solid #F2F2F2;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-full2,
+.btn-commum2{
+    width: 200px;
+    padding: 5px;
+    border: 0.5px solid #F2F2F2;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-class {
+    height: 80px;
+    padding: 0;
+    gap: 30px;
+}
+
+.btn-full2 {
+    background-color: var(--main-color); 
+    color: #fff; 
+}
+
+.btn-full {
+    background-color: var(--main-color); 
+    color: #fff;
+}
+
+
+
+@media screen and (max-width:572px) {
+.btn-full2,
+.btn-commum2{
+    width: 100px;
+    padding: 5px;
+    border: 0.5px solid #F2F2F2;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.row {
+    text-align: center;
+}
+
+}
+
+.main-banner {
+    height: 412px;
+    background-color: var(--main-color);
+    color: #fff;
+    background-image: url("../img/voluntarios.png") !important;
+    position: relative;
+}
+
+.main-banner p {
+    font-family: var(--body-font);
+}
+
+.main-banner h1 {
+    font-weight: bold;
+}
+
+form {
+    gap:30px;
+}
+
+@media screen and (max-width:576px)  {
+form {
+    flex-direction: column;
+    gap: 20px;
+}
+}
+
+#donation-btn-full {
+    padding: 10px 15px !important;
+    background-color:var(--secundary-color);
+    border: none !important;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#donation-btn {
+    padding: 5px 8px;
+    background-color:var(--main-color);
+    border: 1px solid #F59D0E;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color:var(--secundary-color);
+}
+
+#donation-btn-full:hover,
+#donation-btn:hover {
+    font-weight: bold;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.021);
+}
+
+/* Estilização do togle  */
+
+.bi-sort-down-alt {
+    color: #fff;
+    font-family: var(--title-font);
+    font-size: 34px;
+}
+
+@media screen and (max-width:425px) {
+    .main-banner {
+        height: 750px !important;
+        background-position: right bottom !important;
+    }
+
+    .banner-media {
+        display: flex !important;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+.title-section h1 {
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+.title-description {
+    max-width: 1110px;
+    margin: auto;
+    font-size: 18px;
+    
+}
+.cardMenor {
+    background-color: #fff;
+    width: 324px;
+    height: 330px;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.144);
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.cardMenor:hover {
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.384);
+}
+
+.bi-ui-checks,
+.bi-pin-map-fill,
+.bi-piggy-bank-fill {
+    font-size: 100px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#4A276F, #13ADA4);
+}
+
+.banner-dados {
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    padding: 50px;
+}
+
+.banner-dados h1 {
+    font-family: var(--title-font);
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 0;
+}
+
+.banner-dados span {
+    font-family: var(--body-font);
+    font-weight: bold;
+
+}
+
+.togle-section {
+    margin-top: 80px;
+}
+.togle-section h1 {
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+.togle-row {
+    max-width:100%;
+}
+
+.togle-col {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.volunteer-img-container {
+    max-width: 600px;
+    height:345px;
+    border-radius: 8px;
+    background: url(/img/donation.jpg) !important;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.144);
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 475px) {
+    .volunteer-img-container {
+    max-width: 400px;
+    }
+
+    .btn-commum2, 
+    .btn-full2 {
+    height: 50px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .volunteer-img-container {
+    max-width: 300px;
+    }  
+}
+
+.togle-section-btn {
+    font-family: var(--body-font);
+    background-color: #4A276F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Variáveis globais */
+:root {
+ --main-color: #4A276F;
+ --secundary-color: #F59D0E;
+ --terciary-color: #13ADA4;
+ --text-color: #313131;
+ --line-color: #D9D9D9;   
+ --title-font: 'Poppins';
+ --body-font: 'Montserrat';
+}
+
+body {
+    font-family:var(--title-font);
+}
+
+.box {
+    background-color: var(--main-color);
+}
+
+
+.img-logo {
+    max-width: 200px;
+    padding: 10px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link:active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-full,
+.btn-commum{
+    width: 100px;
+    padding: 5px;
+    margin-right: 27px;
+    border: 0.5px solid #F2F2F2;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-full {
+    background-color: var(--main-color); 
+    color: #fff;
+}
+
+.main-banner {
+    height: 412px;
+    background-color: var(--main-color);
+    color: #fff;
+    background-image: url(/img/banner-img.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main-banner p {
+    font-family: var(--body-font);
+}
+
+.main-banner h1 {
+    font-weight: bold;
+}
+
+form {
+    gap:30px;
+}
+
+@media screen and (max-width:576px)  {
+form {
+    flex-direction: column;
+    gap: 20px;
+    }
+}
+
+#donation-btn-full {
+    padding: 5px 8px;
+    background-color:var(--secundary-color);
+    border: none !important;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#donation-btn {
+    padding: 5px 8px;
+    background-color:var(--main-color);
+    border: 1px solid #F59D0E;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color:var(--secundary-color);
+}
+
+#donation-btn-full:hover,
+#donation-btn:hover {
+    font-weight: bold;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.021);
+}
+
+.rown-1 {
+    width: 86px !important;
+    margin: auto !important;
+}
+.title-section h1 {
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+.title-description {
+    max-width: 1110px;
+    margin: auto;
+    font-size: 18px;
+    
+}
+.cardMenor {
+    background-color: #fff;
+    width: 324px;
+    height: 330px;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.144);
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.cardMenor:hover {
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.384);
+}
+
+.bi-ui-checks,
+.bi-pin-map-fill,
+.bi-piggy-bank-fill {
+    font-size: 100px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#4A276F, #13ADA4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-dados {
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    padding: 50px;
+}
+
+.banner-dados h1 {
+    font-family: var(--title-font);
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 0;
+}
+
+.banner-dados span {
+    font-family: var(--body-font);
+    font-weight: bold;
+
+}
+
+.togle-section {
+    margin-top: 80px;
+}
+
+.togle-section h1 {
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+.togle-section p {
+    font-family: var(--body-font);
+}
+
+
+
+.volunteer-img-container {
+    width: 480px;
+    height:445px;
+    border-radius: 8px;
+    background-color: transparent !important;
+    background: url(/img/donationp.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.144);
+}
+
+.togle-section-btn {
+    font-family: var(--body-font);
+    background-color: #4A276F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}
+.togle-section-btn:hover {
+    font-weight: bold;
+    box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.144);
+
+}
+
+.articles-section h1 {
+    font-family: var(--title-font);
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.card h5 {
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+.card p {
+    font-family: var(--body-font);
+}
+
+.card a {
+    font-family: var(--body-font);
+    background-color: var(--main-color);
+    border: none;
+}
+
+.card a:hover {
+    font-weight: bold;
+    background-color: #321c4b;
+}
+
+.card a:visited {
+    font-weight: bold;
+    background-color: #321c4b;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.section-cac {
+    background-color:var(--main-color);
+    padding: 120px 0 !important;
+}
+.section-cac .row {
+    margin:0;
+}
+
+.section-cac h1 {
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+}
+
+.parceiros{
+    width: 130px;
+}
+
+.parceiros2{
+    width: 150px;
+}
+
+footer {
+    padding: 20px
+}
+
+.nav-footer {
+    font-family: var(--body-font);
+    color: #313131;
+}
+.nav-footer:hover {
+    color: #313131;
+}
+
+.bi-instagram,
+.bi-linkedin,
+.bi-medium,
+.bi-whatsapp {
+    color:#313131;
+    font-size: 34px;
+}
+
+.social-networks {
+    justify-content: center;
+}

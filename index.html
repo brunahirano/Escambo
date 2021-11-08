@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN Bootstrap requires -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- CDN Bootstrap Icons requires -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <!-- Link do CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Escambo</title>
+</head>
+
+<body>
+  <!-- Header-->
+  <nav class="navbar navbar-expand-lg text-white box">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo-index.png" class="img-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="bi bi-sort-down-alt"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="quemsomos.html"> Sobre Nós </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Doações
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Fale conosco </a>
+          </li>
+          <li class="nav-item mx-4">
+              <div class="d-flex justify-content-center">
+                <input type="button" class="btn-full" value="Cadastro">
+                <input type="button" class="btn-commum" value="Entre" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img  src="img/LOGO_Prancheta 1 cópia 12 1.png"class="modal-title" id="staticBackdropLabel" style="max-width: 250px;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <h1>Acess</h1>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Usuário" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
+          </div>
+                </div>
+                <div class="modal-footer">
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+          <a href="painel.html"><button type="button" class="btn btn-primary">Entrar</button></a>
+                </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+  <!-- Banner principal -->
+  <section class="container-fluid main-banner d-flex">
+    <div class="row align-items-center align-content-center banner-media">
+      <div class="col-lg-9 col-md-8 col-sm-12">
+        <h1>Ajude instituições com doações e receba cashback para aproveitar benefícios exclusivos.</h1>
+
+        <p>Doe qualquer produto e receba cashback para aproveitar benefícios direto na nossa plataforma.</p>
+
+
+        <form action="" class="d-flex">
+          <button id="donation-btn-full">FAÇA SUA DOAÇÃO</button>
+          <button id="donation-btn">CONHEÇA AS INSTITUIÇÕES PARCEIRAS</button>
+        </form>
+
+      </div>
+      <div class="col-lg-7 col-md-4"></div>
+    </div>
+  </section>
+
+  <!-- Sobre nossos serviços-->
+  <!-- container da seção-->
+  <section class="container-fluid text-center mt-5">
+    <div class="row title-section mb-2">
+      <h1>Transformamos Doações em Propósitos</h1>
+    </div>
+    <div class="row mb-2 rown-1">
+      <img class="mb-3"src="img/separador.png">
+    </div>
+    <div class="row title-description mb-2">
+      <p>Seu papel é separar os itens que você não usa mais ou que não farão falta. Nós iremos até sua residência e
+        daremos o melhor destino a toidas as suas doações.
+        E o melhor: <strong></strong>você ganha casback para usar em nosso site e
+        trocar por benefícios exclusivos.
+        </strong></p>
+    </div>
+    <div class="row mb-2">
+      <div class="col p-0">
+        <!-- card menor-->
+        <div class="container-fluid d-flex cardMenor">
+          <div class="row">
+            <i class="bi bi-ui-checks"></i>
+          </div>
+          <div class="row">
+            <p>Você cria uma conta em nossa pltataforma e cadastra os produtos que quer doar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col p-0">
+        <!-- card menor-->
+        <div class="container-fluid d-flex cardMenor">
+          <div class="row">
+            <i class="bi bi-pin-map-fill"></i>
+          </div>
+          <div class="row">
+            <p>Você cria uma conta em nossa pltataforma e cadastra os produtos que quer doar.</p>
+          </div>
+        </div>
+      </div>
+      <!-- card menor-->
+      <div class="col p-0">
+        <div class="container-fluid d-flex cardMenor">
+          <div class="row">
+            <i class="bi bi-piggy-bank-fill"></i>
+          </div>
+          <div class="row">
+            <p>Você cria uma conta em nossa pltataforma e cadastra os produtos que quer doar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de dados -->
+  <section class="container-lg mt-5 mb-2 p-0">
+    <div class="row banner-dados d-flex align-items-center">
+      <div class="col p-0 col-md-16 text-center mb-2">
+        <div>
+          <h1>2 Milhões</h1>
+          <span>DOAÇÕES FEITAS</span>
+        </div>
+      </div>
+      <div class="col col-md-16 text-center mb-2">
+        <div>
+          <h1>+78</h1>
+          <span>CIDADES BENEFICIADAS</span>
+        </div>
+      </div>
+      <div class="col col-md-16 text-center mb-2">
+        <div>
+          <H1>+10.000</H1>
+          <span>DOADORES CADASTRADOS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seção com o togle e a tabela da relação de doações -->
+
+  <section class="container-fluid d-flex justify-content-center togle-section p-0">
+    <div class="row d-flex align-items-center togle-row p-0">
+      <div class="col togle-col p-0">
+        <div class="volunteer-img-container">
+        </div>
+      </div>
+      <div class="col mt-5 p-0">
+        <h1>Sua doação,</h1>
+        <h1 class="mb-3">seu cashback.</h1>
+        <img class="mb-3"src="img/separador.png">
+        <p class="mb-4">Suas doações são convertidas em créditos quie poderáo ser trocados por benefícos dentro da nossa plataforma.</p>
+        <p>
+          <button class="btn btn-primary togle-section-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Confira Nossa Lista de Conversões
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Tipo de Doação</th>
+                  <th scope="col">Quantidade Mínima</th>
+                  <th scope="col">Quantidade de Créditos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Móveis Novos ou Usados</td>
+                  <td> 1 </td>
+                  <td> 100 </td>
+                </tr>
+
+                <tr>
+                  <td>Alimentos Não Perecíveis</td>
+                  <td> 5kg </td>
+                  <td> 200 </td>
+                </tr>
+
+                <tr>
+                  <td>Roupas Novas ou Usadas</td>
+                  <td> 1 </td>
+                  <td> 60</td>
+                </tr>
+
+                <tr>
+                  <td>Ítens de Higiene Pessoal</td>
+                  <td> 5 </td>
+                  <td> 20 </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- seção de artigos do blog-->
+  <section class="container-fluid articles-section">
+    <div class="row mt-5 text-center">
+      <h1>Confira Nossas Últimas Ações</h1>
+    </div>
+    <div class="row mb-5">
+      <img class=" rown-1"src="img/separador.png">
+    </div>
+    <div class="row mb-5 d-flex">
+      <div class="col-sm-4 mb-3 d-flex justify-content-center">
+        <div class="card" style="width: 24rem;">
+          <img src="img/textoblog1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Um Novo Marco: Alcançamos o número de 2 milhões de doações </h5>
+            <p class="card-text">Graças ao empenho dos nossos doadores, doamos mais de 2 milhões de itens, dentre alimentos vestimentas, móveis...</p>
+            <a href="#" class="btn btn-primary">Leia mais <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-3 d-flex justify-content-center">
+        <div class="card" style="width: 24rem;">
+          <img src="img/textoblog2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">EscamboDay: Mais de 2T de alimentos foram recebidos no Shopping do Morumbi. </h5>
+            <p class="card-text">No último sábado, 30, a Escambo realizou uma ação para recolher doações de seus usuários no shopping morumbi...</p>
+            <a href="#" class="btn btn-primary">Leia mais <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-3 d-flex justify-content-center">
+        <div class="card" style="width: 24rem;">
+          <img src="img/magalu.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nova Parceria: rede Magalu é a mais nova parceira da Escambo. </h5>
+            <p class="card-text">Nossos doadores poderão, nas próximas semanas,  começar a aproveitar os benefícos do super app do Magalu...</p>
+            <a href="#" class="btn btn-primary">Leia mais <i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção dos parceiros-->
+  <section class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-12">
+          <h1 class="text-center"> Empresas Parceiras </h1>
+      </div>
+      <div class="row">
+          <div class="col-12 text-center">
+              <img src="img/separador.png" class="img-responsive">
+          </div>
+      </div>
+      <div class="container  mt-5">
+          <div class="row ">
+              <div class="col-sm-12 mb-3 col-lg-3 col-md-6 text-center   ">
+                  <img src="img/techInAsia.jpg" class="img-responsive parceiros">
+              </div>
+              <div class="col-sm-12 mb-3 col-lg-2 col-md-6  text-center  ">
+                  <img src="img/techCrunch.jpg" class="img-responsive parceiros2">
+              </div>
+              <div class="col-sm-12 mb-3 col-lg-2 col-md-6 text-center ">
+                  <img src="img/e27.jpg" class="img-responsive parceiros">
+              </div>
+              <div class="col-sm-12 mb-3 col-lg-2 col-md-6 text-center  ">
+                  <img src="img/cNet.jpg" class="img-responsive parceiros">
+              </div>
+              <div class="col-sm-12 mb-3 col-lg-2 col-md-12 text-center ">
+                  <img src="img/businessInsider.jpg" class="img-responsive parceiros">
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Seção para Call to Action-->
+  <section class="container-fluid section-cac p-0">
+    <div class="row d-flex p-0">
+      <div class="col-lg-6 d-flex text-center p-0">
+        <h1>Faça sua doação agora mesmo!</h1>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center p-0">
+        <div class="d-flex btn-class p-0">
+          <input type="button" class="btn-full2" value="Cadastro">
+          <input type="button" class="btn-commum2" value="Entre">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container-fluid p-0">
+    <div class="row-col-1 align-items-center text-center mb-0 mt-2 p-0">
+      <div class="col p-0">
+        <img src="img/LOGO_Prancheta 1 cópia 12 1.png" class="img-logo2">
+      </div>
+      <div class="col d-flex justify-content-center p-0">
+        <ul class="nav ">
+          <li class="nav-item">
+            <a class="nav-link active nav-footer" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-footer" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-footer" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="p-0 mt-5">Feito com 💖 pelo time de desenvolvimento da Escambo. Todos os direitos reservados</p>
+      
+    </div>
+
+    <div class="row d-flex gap-3 p-0" style="max-width:100%">
+      <div class="d-flex social-networks gap-3">
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-linkedin"></i>
+        <i class="bi bi-medium"></i>
+        <i class="bi bi-whatsapp"></i>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
