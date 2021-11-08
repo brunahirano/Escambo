@@ -32,9 +32,10 @@ h1 {
     font-weight: bold;
 }
 
-p {
+/* p {
     font-size: clamp(1em, 1em + 1vh, 1.5em);
-}
+} */
+
 .box {
     background-color: var(--main-color);
 }

@@ -1,12 +1,3 @@
-// Importe de header e footer
-// $.get('testeHeader.html', function (html) {
-//   $('header').append(html);
-// })
-
-// $.get('testeFooter.html', function (html) {
-//   $('footer').append(html);
-// })
-
 // Tratamento do FORMULÁRIO
 // Função para chamar MODAL personalizado
 function caixaModal(titulo, msg, obj="", cor="#F59D0E") {
@@ -29,11 +20,22 @@ var campo = {
   validarForm : function(){
     let cont = 0
     let msg = ""
+    // Percorre todos os campos procurando os que estão em branco e adiciona seus nomes ao modal de envio
     for(let i=0; i < campo.todos.length; i++){
       if(campo.todos[i].value == ""){
         let nome = campo.todos[i].name
         msg += "<li>"+nome.substr(0, 1).toUpperCase()+ nome.substr(1)+"\n"+"</li>"
         cont++
+      // Tratamento do campo E-MAIL*
+      }else if (campo.todos[i].id =="email"){
+        if(campo.todos[i].value.match(/[A-Z a-z 0-9]+@[a-z]+\.[a-z]+/)){
+          $(campo.todos[i]).css("border-bottom", "1px solid gray")
+        }else{
+          caixaModal("E-mail inválido", "Exemplo: nome@email.com")
+          $(campo.todos[i]).css("border-bottom", "1px solid red")
+          msg += "<li>"+nome.substr(0, 1).toUpperCase()+ nome.substr(1)+"\n"+"</li>"
+          cont++
+        }
       }
     }
     if ($(".obrigatorio:radio:checked").length == 0){
@@ -52,7 +54,7 @@ $(".obrigatorio").blur(function () {
   if ($(this).val()=="") {
     caixaModal("Campo obrigatório!", "Preencha o campo", this.name)
     $(this).css("border-bottom", "1px solid red")
-    // Tratamento campo E-MAIL
+    // Tratamento campo E-MAIL ONBLUR
   }else if (this.id =="email"){
     if(this.value.match(/[A-Z a-z 0-9]+@[a-z]+\.[a-z]+/)){
       $(this).css("border-bottom", "1px solid gray")
@@ -92,4 +94,3 @@ function consultaCep() {
       .catch(x => cepProcurado==""?null:caixaModal("Atenção!", "Este CEP não foi encontrado."))
   }
 }
-

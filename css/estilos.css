@@ -1,8 +1,8 @@
 /* HUGO 🤷🏻‍♂️ */
 
 /* Estilização dos itens da carteira */
+
 #img1 {
-   
     width: 48px;
     height: 48px;
     left: 10px;
@@ -10,7 +10,6 @@
 }
 
 .imgCard {
-    
     width: 20%;
     left: 33.33%;
     right: 33.33%;
@@ -18,25 +17,28 @@
     bottom: 41.67%;
 }
 
-.carteira{
+.carteira {
     box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.25);
 }
 
-.carteira:hover{
+.carteira:hover {
     box-shadow: 10px 10px 10px rgba(160, 163, 189, 0.25);
 }
 
-
-/* Fim da Estilização dos itens da carteira */ 
+/* Fim da Estilização dos itens da carteira */
 
 /* Estilização dos itens cards sobre as ações na plataforma */
+
 .cardMain {
-   
     border-radius: 10px;
     box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.25);
 }
 
-.cardMain:hover{
+/* .cardMain p{
+    padding-right: 0;
+} */
+
+.cardMain:hover {
     box-shadow: 10px 10px 10px rgba(160, 163, 189, 0.25);
 }
 
@@ -55,15 +57,13 @@
     right: 20px;
 }
 
-
 /* Fim da Estilização dos itens da plataforma */
 
-
-
 /* Estilização dos itens dos Cards dos benefícios */
+
 .imgCardGrande {
-    width: 200px;
-    height: 120px;
+    max-width: 200px;
+    /* height: 120px; */
 }
 
 .cardGrande {
@@ -73,10 +73,9 @@
     box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.144);
 }
 
-.cardGrande:hover{
+.cardGrande:hover {
     box-shadow: 10px 40px 50px rgba(0, 0, 0, 0.384);
 }
-
 
 .desconto {
     width: 412px;
@@ -89,7 +88,7 @@
     height: 15px;
 }
 
-.termosDeUso{
+.termosDeUso {
     text-decoration: none;
     color: #4A276F;
     font-weight: bolder;
@@ -104,10 +103,7 @@
     font-size: 20px;
     background-color: #4A276F;
     border: solid #4A276F;
-   
 }
-
-
 
 .disponibilidade {
     width: 120px;
@@ -120,10 +116,9 @@
     border: solid #F59D0E;
 }
 
-.disponibilidade:hover{
+.disponibilidade:hover {
     box-shadow: 10px 10px 10px rgba(160, 163, 189, 0.25);
 }
-
 
 .beneficio {
     width: 209px;
@@ -131,12 +126,10 @@
     border-radius: 10px;
     height: 43px;
     font-family: 'Poppins';
-  
     color: #4A276F;
     font-size: 20px;
     border: solid #4A276F;
 }
-
 
 .beneficio:hover {
     font-weight: bold;
@@ -145,64 +138,54 @@
     border: none;
 }
 
-div {
-   
-}
+div {}
 
-div.col{
-
+div.col {
     width: 300px !important;
-
 }
 
 /* Fim da Estilização dos itens do Card sobre benefícios */
 
+/* Estilização das imagens dos parceiros */
 
-/* Estilização das imagens dos parceiros */ 
-.parceiros{
-   
+.parceiros {
     width: 130px;
 }
 
-.parceiros2{
+.parceiros2 {
     width: 150px;
 }
 
 /* fim da Estilização das imagens dos Parceiros */
 
-
 /* Estilização das fontes */
-.titulos{
 
+.titulos {
     font-family: 'Poppins';
     font-weight: bold;
 }
 
-.letras{
+.letras {
     font-family: 'Montserrat';
 }
+
 /*Fim da Estilização dos itens */
 
-
 /* Estilização das Modais */
-.minhaClasse{
+
+.minhaClasse {
     background-color: #F59D0E;
-    
     color: white;
 }
 
-.minhaClasse1{
-   
-  color: #313131;
-
+.minhaClasse1 {
+    color: #313131;
 }
 
-.editar{
+.editar {
     background-color: #4A276F;
     font-size: large;
-    
 }
-
 
 .ativar1 {
     width: 120px;
@@ -214,11 +197,10 @@ div.col{
     font-size: 20px;
     background-color: #4A276F;
     border: solid #4A276F;
-   
 }
 
-.ativar1:hover{
-    color:white;
+.ativar1:hover {
+    color: white;
 }
 
 .disponibilidade1 {
@@ -233,9 +215,48 @@ div.col{
     border: solid #F59D0E;
 }
 
-.disponibilidade1:hover{
+.disponibilidade1:hover {
     color: white;
 }
 
 /* Fim da Estilização das modais */
 
+@media screen and (max-width:425px) {
+    .cardMain {
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .imgCardGrande{
+        max-width: 130px;
+
+    }
+    .disponibilidade{
+        font-size: 12px;
+        max-width: 90px;
+    }
+
+    .ativar{
+        font-size: 12px;
+        width: 90px;
+    }
+
+    .desconto {
+        width: 300px;
+        margin: 0 auto;
+        height: 58px;
+        font-size: 17px;
+    }
+
+    .checkbox{
+        margin-top: 50px;
+        
+    }
+
+    .beneficio{
+        margin-top: 50px;
+    }
+
+
+}

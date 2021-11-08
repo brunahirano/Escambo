@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
+
 
 <head>
   <meta charset="UTF-8">
@@ -17,180 +19,195 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap%27);">
 
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-<main class="container-fluid p-0">
-  <header>
+  <main class="container-fluid p-0">
+    <header>
 
-  <!-- Header-->
-  <nav class="navbar navbar-expand-lg text-white box">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/logo-index.png" class="img-logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"><i class="bi bi-sort-down-alt"></i></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="quemsomos.html"> Sobre Nós </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Doações
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <!-- Header-->
+      <nav class="navbar navbar-expand-lg text-white box">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo-index.png" class="img-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="bi bi-sort-down-alt"></i></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="quemsomos.html"> Sobre Nós </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Doações
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Fale conosco </a>
+              </li>
+              <li class="nav-item mx-4">
+                <div class="d-flex justify-content-center">
+                  <input type="button" class="btn-full" value="Cadastro">
+                  <input type="button" class="btn-commum" value="Entre" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                </div>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Fale conosco </a>
-          </li>
-          <li class="nav-item mx-4">
-              <div class="d-flex justify-content-center">
-                <input type="button" class="btn-full" value="Cadastro">
-                <input type="button" class="btn-commum" value="Entre" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          </div>
+        </div>
+
+      </nav>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="img/LOGO_Prancheta 1 cópia 12 1.png" class="modal-title" id="staticBackdropLabel"
+                style="max-width: 250px;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </nav>
-
-  <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <img  src="img/LOGO_Prancheta 1 cópia 12 1.png"class="modal-title" id="staticBackdropLabel" style="max-width: 250px;">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="">
-          <h1></h1>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Usuário" aria-label="Username" aria-describedby="basic-addon1">
-          </div>
-          
-          <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
-          </div>
+            <div class="modal-body">
+              <form action="">
+                <h1></h1>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                  <input type="text" class="form-control" placeholder="Usuário" aria-label="Username"
+                    aria-describedby="basic-addon1">
                 </div>
-                <div class="modal-footer">
-          <button type="reset" class="btn btn-secondary">Limpar</button>
-          <a href="painel.html"><button type="button" class="btn btn-primary">Entrar</button></a>
-                </div>
-        </form>
-    </div>
-  </div>
-</div>
 
-    <!--Carousel-->
-    <div id="carouselExampleIndicators" class="carousel slide carrossel" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <!--botões inferiores do banner-->
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div>
-          <div class="carousel-item active">
-            <img src="img/banner9.png" class="w-100">
-            <div class="carousel-caption">
-              <a href="#"><button class="btnCaro btn btn-dark letras">Doar agora</button></a>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                  <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/banner5003.png" class="w-100">
-            <div class="carousel-caption">
-              <a href="#" class="btnCaro btn btn-dark letras">Doar agora</a>
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-secondary">Limpar</button>
+              <a href="painel.html"><button type="button" class="btn btn-primary">Entrar</button></a>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/banner5004.png" class="w-100">
-            <div class="carousel-caption">
-              <a href="#" class="btnCaro btn btn-dark letras">Doar agora</a>
-            </div>
+            </form>
           </div>
         </div>
       </div>
 
-      <!--botões laterais-->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      <!--Carousel-->
+      <div id="carouselExampleIndicators" class="carousel slide carrossel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <!--botões inferiores do banner-->
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div>
+            <div class="carousel-item active">
+              <img src="img/banner9.png" class="w-100">
+              <div class="carousel-caption">
+                <a href="#"><button class="btnCaro btn btn-dark letras">Doar agora</button></a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner5003.png" class="w-100">
+              <div class="carousel-caption">
+                <a href="#" class="btnCaro btn btn-dark letras">Doar agora</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner5004.png" class="w-100">
+              <div class="carousel-caption">
+                <a href="#" class="btnCaro btn btn-dark letras">Doar agora</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-  </header>
-
-
-
-  <!-- ************************************************ FIM DO HEADER -->
-
-
-
-
-
-    <!-- *********************************SALDO ATUAL -->
-    <div class="row">
-      <div class="col-10 ">
-        <h1 class="titulos"> Olá, Maria Joana </h1>
+        <!--botões laterais-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="col-2">
-        <div class="d-flex justify-content-end carteira">
-          <img src="img/carteira 1.png" id="img1">
-          <div class="flex-column justify-content-end p-2">
-            <h2 class="text-center letras">$<span id="saldoAtual" class="letras">70</span> </h2>
-            <h5 class="d-flex column text-center letras">Saldo Atual </h5>
 
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+    <!-- **************** FIM DO HEADER -->
+
+
+
+
+
+    <!-- *************SALDO ATUAL -->
+    <div class="container-fluid mt-3 ">
+      <div class="row">
+        <div class="col-lg-9 col-sm-6 col-md-6 " style="padding-right: 0;">
+          <h1 class="titulos text-start">
+            Olá,
+          </h1>
+          <h1 class="titulos text-start"> Maria Joana</h1>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-md-6 p-0 " style="max-width: 280px;">
+          <div class="d-flex justify-content-center carteira">
+            <img src="img/carteira 1.png" id="img1">
+            <div class="flex-column justify-content-end">
+              <h2 class="text-center letras" style="padding-right: 0;margin-right: 2px;">$<span id="saldoAtual"
+                  class="letras">70</span>
+              </h2>
+              <h5 class="d-flex column text-center letras" style="padding-right: 0;margin-right: 2px;">Saldo Atual </h5>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ********************************* SALDO ATUAL -->
+    <!-- *********** SALDO ATUAL -->
 
 
     <!-- cards sobre as ações na plataforma-->
     <div class="row  mt-5">
 
 
-      <div class="col-lg-3 col-md-6  mb-3 sm-12  container cardMain">
+      <div class="col-lg-3 col-md-12 p-0  mb-3 sm-12  container-fluid cardMain p-0">
 
-        <div class="row align-items-center">
+        <div class="row align-items-center m-0 m-auto" style="width: 80%!important;">
 
           <div class="col-3 cardIcon ">
             <i class="bi bi-bag icon"></i>
 
           </div>
 
-          <div class="col-7">
+          <div class="col-7" style="padding-right: 0!important;">
             <h2 class="letras"> 200 </h2>
             <p class="letras"> Número de doações até
               08/11/2021 </p>
@@ -209,16 +226,16 @@
 
 
 
-      <div class="col-lg-3 col-md-6 mb-3 sm-12 container cardMain">
+      <div class="col-lg-3 col-md-12 p-0  mb-3 sm-12  container-fluid cardMain p-0">
 
-        <div class="row align-items-center">
+        <div class="row align-items-center m-0 m-auto" style="width: 80%!important;">
 
           <div class="col-3 cardIcon ">
             <i class="bi bi-plus-circle icon"></i>
 
           </div>
 
-          <div class="col-7">
+          <div class="col-7" style="padding-right: 0!important;">
             <h2 class="letras"> 20 </h2>
             <p class="letras"> Benefícios resgatados na
               plataforma. </p>
@@ -234,16 +251,16 @@
       </div>
 
 
-      <div class="col-lg-3 col-md-6 mb-3 sm-12 container cardMain">
+      <div class="col-lg-3 col-md-12 p-0  mb-3 sm-12  container-fluid cardMain p-0">
 
-        <div class="row align-items-center">
+        <div class="row align-items-center m-0 m-auto" style="width: 80%!important;">
 
           <div class="col-3 cardIcon ">
             <i class="bi bi-currency-dollar icon"></i>
 
           </div>
 
-          <div class="col-7">
+          <div class="col-7" style="padding-right: 0!important;">
             <h2 class="letras">R$200,00 </h2>
             <p class="letras"> Valor economizado ao longo
               do uso da plataforma </p>
@@ -259,16 +276,16 @@
       </div>
 
 
-      <div class="col-lg-3 col-md-6 mb-3 sm-12 container cardMain">
+      <div class="col-lg-3 col-md-12 p-0  mb-3 sm-12  container-fluid cardMain p-0">
 
-        <div class="row align-items-center">
+        <div class="row align-items-center m-0 m-auto" style="width: 80%!important;">
 
           <div class="col-3 cardIcon ">
             <i class="bi bi-heart icon"></i>
 
           </div>
 
-          <div class="col-7">
+          <div class="col-7" style="padding-right: 0!important;">
             <h2> 5 </h2>
             <p class="letras"> Número de instituições que você
               ajudou com as doações </p>
@@ -299,292 +316,199 @@
         <h1 class="text-center titulos"> Veja os benefícios disponíveis para você</h1>
         <h6 class="text-center titulos">Cada oferta por nós oferecidas possuem um valor fixo de 20 créditos </h6>
       </div>
+    </div>
 
 
-      <!-- ****************************************************************** 2ª PARTE -->
+    <!-- ********************** 2ª PARTE -->
 
-      <!--Início dos cards sobre benefícios  -->
-      <div class="container-fluid mt-5">
+    <!--Início dos cards sobre benefícios  -->
+    <div class="container-fluid mt-5">
 
 
 
-        <div class="row mb-2">
-          <div class="col-sm-12 col-md-12 col-lg-6 mt-2">
+      <div class="row mb-2">
+        <div class="col-sm-12 p-0 col-md-12 col-lg-6 mt-2">
 
-            <div class="container-fluid mr-1 cardGrande">
-              <div class="row mt-2">
-                <div class="col-8">
-                  <img src="img/UCI.png" class="imgCardGrande">
-                </div>
-                <div class="col-2 mt-2 ">
-                  <div class="disponibilidade  letras" class="1">Indisponível</div>
-                </div>
-              </div>
-              <div class="row mt-3">
-
-
-                <h4 class="text-left h4CardGrande mt-3 p-1 titulos ">10% de Desconto em cinema </h6>
-                  <p class="fw-bold text-left desconto letras mt-4 p-2 ">Em todos os filmes,
-                    para utilizar o desconto, clique em "Usar Benefício!"
-                    e você será direcionado ao site parceiro
-                  </p>
-
-
-              </div>
-              <div class="row">
-                <div class="col-3 termos mt-3">
-                  <input type="checkbox" class="letras" disabled> Você concorda com nossos <a href="http://"
-                    class="termosDeUso letras"> termos de uso
-                  </a>.
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="d-flex justify-content-end mt-4 ">
-                  <button class="btn beneficio" id="btn1" disabled value="20">Usar Benefício</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-          <div class="col-sm-12 col-md-12 col-lg-6 mt-2 mb-5">
-
-
-
-            <div class="container-fluid cardGrande">
-              <div class="row mt-2">
-                <div class="col-8">
-                  <img src="img/natura.png" class="imgCardGrande">
-                </div>
-                <div class="col-2 mt-2 ">
-                  <div class="ativar letras" class="2">Disponível</div>
-                </div>
-              </div>
-              <div class="row mt-3">
-
-                <h4 class="text-left h4CardGrande mt-3 p-1 titulos">20% de Desconto em Loja Natura </h6>
-                  <p class="fw-bold text-left desconto letras p-2 ">Em todo o site,
-                    para utilizar o desconto, clique em "Usar Benefício!"
-                    e você será direcionado ao site parceiro
-                  </p>
-
-              </div>
-              <div class="row">
-                <div class="col-3 termos mt-3">
-                  <input type="checkbox" id="checar" class="letras"> Você concorda com nossos <a href="http://"
-                    class="termosDeUso letras"> termos de uso
-                  </a>.
-                </div>
-              </div>
-
-
-
-
-              <div class="row mt-3">
-                <div class="d-flex justify-content-end mt-4 ">
-                  <button class="btn beneficio " data-bs-dismiss="modal" onclick="mostrarModal()" id="btn2" disabled
-                    value="20">Usar Benefício</button>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-
-
-        <!-- **************************** FIM DO 1ª CARDGRANDE -->
-
-
-
-
-        <div class="row mb-5">
-          <div class="col-sm-12 col-md-12 col-lg-6 mt-2">
-
-            <div class="container-fluid cardGrande">
-              <div class="row mt-2">
-                <div class="col-8">
-                  <img src="img/magalu.png" class="imgCardGrande">
-                </div>
-                <div class="col-2 mt-2 ">
-                  <div class="ativar letras" class="2">Disponível</div>
-                </div>
-              </div>
-              <div class="row mt-3">
-
-                <h4 class="text-left h4CardGrande mt-3 p-1 titulos">45% de Desconto em Lojas Magalu</h6>
-                  <p class="fw-bold text-left desconto letras  p-2">Em todo o site,
-                    Para utilizar o desconto, clique em "Usar Benefício!"
-                    e você será direcionado ao site parceiro
-                  </p>
-
-              </div>
-              <div class="row">
-                <div class="col-3 termos mt-3">
-                  <input type="checkbox" class="letras" id="checar3"> Você concorda com nossos <a href="http://"
-                    class="termosDeUso letras"> termos de uso
-                  </a>.
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="d-flex justify-content-end mt-4 ">
-                  <button class="btn  beneficio" id="btn3" onclick="mostrarModal()" disabled value="20">Usar
-                    Benefício</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col-sm-12 col-md-12 col-lg-6 mt-2 mb-5">
-
-
-            <div class="container-fluid cardGrande">
-              <div class="row mt-2">
-                <div class="col-8">
-                  <img src="img/dafiti.png" class="imgCardGrande">
-                </div>
-                <div class="col-2 mt-2 ">
-                  <div class="disponibilidade letras" class="1">Indisponível</div>
-                </div>
-              </div>
-              <div class="row mt-3">
-
-                <h4 class="text-left h4CardGrande mt-3 p-1 titulos">45% de Desconto em Lojas Dafiti</h6>
-                  <p class="fw-bold text-left desconto letras  p-2">Em todo o site,
-                    Para utilizar o desconto, clique em "Usar Benefício!"
-                    e você será direcionado ao site parceiro
-                  </p>
-
-              </div>
-              <div class="row">
-                <div class="col-3 termos mt-3">
-                  <input type="checkbox" class="letras" disabled> Você concorda com nossos <a href="http://"
-                    class="termosDeUso letras"> termos de uso
-                  </a>.
-                </div>
-              </div>
-              <div class="row mt-3">
-                <div class="d-flex justify-content-end mt-4 ">
-                  <button class="btn btn beneficio " id="btn4" disabled value="20">Usar Benefício</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-
-
-
-
-      </div>
-
-
-
-      <!-- ÚLTIMA LINHA DE CARDGRANDE -->
-      <div class="row mb-5">
-        <div class="col-sm-12 col-md-12 col-lg-6 mt-2">
-
-          <div class="container container-fluid cardGrande">
+          <div class="container-fluid mr-1  cardGrande" style="padding: 0 8px;">
             <div class="row mt-2">
               <div class="col-8">
-                <img src="img/uber.png" class="imgCardGrande">
+                <img src="img/UCI.png" class="imgCardGrande">
               </div>
               <div class="col-2 mt-2 ">
-                <div class="ativar" class="2">Disponível</div>
+                <div class="disponibilidade  letras" class="1">Indisponível</div>
               </div>
             </div>
             <div class="row mt-3">
 
-              <h4 class="text-left h4CardGrande mt-3 p-1 titulos">5% de Desconto em viagens UBER </h6>
-                <p class="fw-bold text-left desconto letras  p-2">Em todas as corridas,
-                  Para utilizar o desconto, clique em "Usar Benefício!"
-                  e você será direcionado ao app parceiro
+
+              <h4 class="text-left h4CardGrande mt-3 p-1 titulos ">10% de Desconto em cinema </h6>
+                <p class="fw-bold text-left desconto letras mt-4 p-2 ">Em todos os filmes,
+                  para utilizar o desconto, clique em "Usar Benefício!"
+                  e você será direcionado ao site parceiro
+                </p>
+
+
+            </div>
+            <div class="row">
+              <div class="col-3 termos mt-3">
+                <input type="checkbox" class="letras checkbox" disabled> Você concorda com nossos <a href="http://"
+                  class="termosDeUso letras"> termos de uso
+                </a>.
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="d-flex justify-content-end mt-4 ">
+                <button class="btn beneficio" id="btn1" disabled value="20">Usar Benefício</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-sm-12 p-0 col-md-12 col-lg-6 mt-2 mb-5">
+
+
+
+          <div class="container-fluid cardGrande" style="padding: 0 8px;">
+            <div class="row mt-2">
+              <div class="col-8">
+                <img src="img/natura.png" class="imgCardGrande">
+              </div>
+              <div class="col-2 mt-2 ">
+                <div class="ativar letras" class="2">Disponível</div>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <h4 class="text-left h4CardGrande mt-3 p-1 titulos">20% de Desconto em Loja Natura </h6>
+                <p class="fw-bold text-left desconto letras p-2 ">Em todo o site,
+                  para utilizar o desconto, clique em "Usar Benefício!"
+                  e você será direcionado ao site parceiro
                 </p>
 
             </div>
             <div class="row">
               <div class="col-3 termos mt-3">
-                <input type="checkbox" id="checar5" class="letras"> Você concorda com nossos <a href="http://"
+                <input type="checkbox" id="checar" class="letras checkbox"> Você concorda com nossos <a href="http://"
                   class="termosDeUso letras"> termos de uso
                 </a>.
               </div>
             </div>
+
+
+
+
             <div class="row mt-3">
               <div class="d-flex justify-content-end mt-4 ">
-                <button class="btn beneficio" id="btn5" onclick="mostrarModal()" value="20" disabled>Usar
-                  Benefício</button>
+                <button class="btn beneficio " data-bs-dismiss="modal" onclick="mostrarModal()" id="btn2" disabled
+                  value="20">Usar Benefício</button>
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
         </div>
 
 
 
 
-        <div class="col-sm-12 col-md-12 col-lg-6 mt-2 mb-5">
 
-          <div class="container-fluid cardGrande">
+
+
+      </div>
+
+
+      <!-- ********** FIM DO 1ª CARDGRANDE -->
+
+
+
+
+      <div class="row mb-5">
+        <div class="col-sm-12 p-0 col-md-12 col-lg-6 mt-2">
+
+          <div class="container-fluid cardGrande" style="padding: 0 8px;">
             <div class="row mt-2">
               <div class="col-8">
-                <img src="img/copenhagen.png" class="imgCardGrande">
+                <img src="img/magalu.png" class="imgCardGrande">
               </div>
               <div class="col-2 mt-2 ">
-                <div class="ativar " class="2">Disponível</div>
+                <div class="ativar letras" class="2">Disponível</div>
               </div>
             </div>
             <div class="row mt-3">
 
-              <h4 class="text-left h4CardGrande mt-3 p-1 titulos">10% de Desconto em Kopenhagen </h4>
-              <p class="fw-bold text-left desconto letras  p-2">Em produtos selecionados,Para utilizar o
-                desconto, clique em "Usar Benefício!"
-                e você será direcionado ao app parceiro
-              </p>
+              <h4 class="text-left h4CardGrande mt-3 p-1 titulos">45% de Desconto em Lojas Magalu</h6>
+                <p class="fw-bold text-left desconto letras  p-2">Em todo o site,
+                  Para utilizar o desconto, clique em "Usar Benefício!"
+                  e você será direcionado ao site parceiro
+                </p>
 
             </div>
             <div class="row">
               <div class="col-3 termos mt-3">
-                <input type="checkbox" id="checar6" class="letras"> Você concorda com nossos <a href="http://"
+                <input type="checkbox" class="letras checkbox" id="checar3"> Você concorda com nossos <a href="http://"
                   class="termosDeUso letras"> termos de uso
                 </a>.
               </div>
             </div>
             <div class="row mt-3">
               <div class="d-flex justify-content-end mt-4 ">
-                <button class="btn  beneficio" id="btn6" value="20" disabled onclick="mostrarModal()">Usar
+                <button class="btn  beneficio" id="btn3" onclick="mostrarModal()" disabled value="20">Usar
                   Benefício</button>
               </div>
             </div>
           </div>
-
-
-
         </div>
 
 
+
+
+        <div class="col-sm-12 p-0 col-md-12 col-lg-6 mt-2 mb-5">
+
+
+          <div class="container-fluid cardGrande" style="padding: 0 8px;">
+            <div class="row mt-2">
+              <div class="col-8">
+                <img src="img/dafiti.png" class="imgCardGrande">
+              </div>
+              <div class="col-2 mt-2 ">
+                <div class="disponibilidade letras" class="1">Indisponível</div>
+              </div>
+            </div>
+            <div class="row mt-3">
+
+              <h4 class="text-left h4CardGrande mt-3 p-1 titulos">45% de Desconto em Lojas Dafiti</h6>
+                <p class="fw-bold text-left desconto letras  p-2">Em todo o site,
+                  Para utilizar o desconto, clique em "Usar Benefício!"
+                  e você será direcionado ao site parceiro
+                </p>
+
+            </div>
+            <div class="row">
+              <div class="col-3 termos mt-3">
+                <input type="checkbox" class="letras checkbox" disabled> Você concorda com nossos <a href="http://"
+                  class="termosDeUso letras"> termos de uso
+                </a>.
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="d-flex justify-content-end mt-5 ">
+                <button class="btn btn beneficio " id="btn4" disabled value="20">Usar Benefício</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -592,157 +516,252 @@
       </div>
 
 
-      <!--Fim dos cards sobre benefícios  -->
 
 
-      <!-- *********************************************** 3 PARTE -->
-
-
-      <!-- Empresas Parceiras -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <h1 class="text-center titulos"> Empresas Parceiras </h1>
-        </div>
-
-
-        <div class="row">
-          <div class="col-12 text-center">
-            <img src="img/Rectangle 19.png" class="img-responsive">
-          </div>
-        </div>
-
-
-        <!-- ************************** PARTE 4 -->
-
-        <div class="container  mt-5">
-          <div class="row ">
-            <div class="col-sm-12 mb-3 col-lg-3 col-md-6 text-center   ">
-              <img src="img/techInAsia.png" class="img-responsive parceiros">
-            </div>
-            <div class="col-sm-12 mb-3 col-lg-2 col-md-6  text-center  ">
-              <img src="img/techCrunch.png" class="img-responsive parceiros2">
-            </div>
-
-            <div class="col-sm-12 mb-3 col-lg-2 col-md-6 text-center ">
-              <img src="img/e27.png" class="img-responsive parceiros">
-            </div>
-
-            <div class="col-sm-12 mb-3 col-lg-2 col-md-6 text-center  ">
-              <img src="img/cNet.png" class="img-responsive parceiros">
-            </div>
-
-            <div class="col-sm-12 mb-3 col-lg-2 col-md-12 text-center ">
-              <img src="img/businessInsider.png" class="img-responsive parceiros">
-            </div>
-
-          </div>
-        </div>
-        <!-- Fim das empresas Parceiras -->
-
-
-        <!-- Modais -->
-        <div class="modal" tabindex="-1" id="minhaModal" data-bs-backdrop="static">
-          <div class="modal-dialog modalCor modal-md">
-            <div class="modal-content">
-
-              <div class="container editar">
-                <div class="row minhaClasse">
-                  <div class="col text-center editar letras  p-2">
-                    Leia antes de continuar
-                  </div>
-                </div>
-              </div>
-              <h3 class=" mt-4 minhaClasse1 text-center letras p-">Confirma que deseja adicionar esse benefício?</h3>
-
-
-
-              <div class="modal-footer">
-                <button type="button" class="btn disponibilidade1" data-bs-dismiss="modal">Fechar</button>
-                <button type="button" class="btn ativar1" onclick="botaoDisponivel()"
-                  data-bs-dismiss="modal">Aceito</button>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <div class="modal" tabindex="-1" id="minhaModal2" data-bs-backdrop="static">
-          <div class="modal-dialog modalCor modal-md">
-            <div class="modal-content">
-
-              <div class="container editar">
-                <div class="row minhaClasse">
-                  <div class="col text-center editar letras  p-2">
-                    Leia antes de continuar
-                  </div>
-                </div>
-              </div>
-              <h3 class=" mt-4 minhaClasse1 text-center letras p-">Seus Créditos acabaram :(</h3>
-
-
-
-              <div class="modal-footer">
-                <button type="button" class="btn disponibilidade1" data-bs-dismiss="modal">Fechar</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Fim das Modais -->
-    <!-- Seção para Call to Action-->
-    <section class="container-fluid section-cac p-0">
-      <div class="row d-flex p-0">
-        <div class="col-lg-6 d-flex text-center p-0">
-          <h1>Faça sua doação agora mesmo!</h1>
-        </div>
-        <div class="col-lg-6 d-flex align-items-center justify-content-center p-0">
-          <div class="d-flex btn-class p-0">
-            <input type="button" class="btn-full2" value="Cadastro">
-            <input type="button" class="btn-commum2" value="Entre">
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- Footer -->
-  <footer class="container-fluid p-0">
-    <div class="row-col-1 align-items-center text-center mb-0 mt-2 p-0">
-      <div class="col p-0">
-        <img src="img/LOGO_Prancheta 1 cópia 12 1.png" class="img-logo2">
-      </div>
-      <div class="col d-flex justify-content-center p-0">
-        <ul class="nav ">
-          <li class="nav-item">
-            <a class="nav-link active nav-footer" aria-current="page" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-footer" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-footer" href="#">Link</a>
-          </li>
-        </ul>
-      </div>
-
-      <p class="p-0 mt-5">Feito com 💖 pelo time de desenvolvimento da Escambo. Todos os direitos reservados</p>
-      
     </div>
 
-    <div class="row d-flex gap-3 p-0" style="max-width:100%">
-      <div class="d-flex social-networks gap-3">
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-linkedin"></i>
-        <i class="bi bi-medium"></i>
-        <i class="bi bi-whatsapp"></i>
+
+
+    <!-- ÚLTIMA LINHA DE CARDGRANDE -->
+    <div class="row mb-5">
+      <div class="col-sm-12 p-0 col-md-12 col-lg-6 mt-2">
+
+        <div class="container container-fluid cardGrande">
+          <div class="row mt-2">
+            <div class="col-8">
+              <img src="img/uber.png" class="imgCardGrande">
+            </div>
+            <div class="col-2 mt-2 ">
+              <div class="ativar" class="2">Disponível</div>
+            </div>
+          </div>
+          <div class="row mt-3">
+
+            <h4 class="text-left h4CardGrande mt-3 p-1 titulos">5% de Desconto em viagens UBER </h6>
+              <p class="fw-bold text-left desconto letras  p-2">Em todas as corridas,
+                Para utilizar o desconto, clique em "Usar Benefício!"
+                e você será direcionado ao app parceiro
+              </p>
+
+          </div>
+          <div class="row">
+            <div class="col-3 termos mt-3">
+              <input type="checkbox" id="checar5" class="letras checkbox"> Você concorda com nossos <a href="http://"
+                class="termosDeUso letras"> termos de uso
+              </a>.
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="d-flex justify-content-end mt-4 ">
+              <button class="btn beneficio" id="btn5" onclick="mostrarModal()" value="20" disabled>Usar
+                Benefício</button>
+            </div>
+          </div>
+        </div>
       </div>
+
+
+
+
+      <div class="col-sm-12 p-0 col-md-12 col-lg-6 mt-2 mb-5">
+
+        <div class="container-fluid cardGrande">
+          <div class="row mt-2">
+            <div class="col-8">
+              <img src="img/copenhagen.png" class="imgCardGrande">
+            </div>
+            <div class="col-2 mt-2 ">
+              <div class="ativar " class="2">Disponível</div>
+            </div>
+          </div>
+          <div class="row mt-3">
+
+            <h4 class="text-left h4CardGrande mt-3 p-1 titulos">10% de Desconto em Kopenhagen </h4>
+            <p class="fw-bold text-left desconto letras  p-2">Em produtos selecionados,Para utilizar o
+              desconto, clique em "Usar Benefício!"
+              e você será direcionado ao app parceiro
+            </p>
+
+          </div>
+          <div class="row">
+            <div class="col-3 termos mt-3">
+              <input type="checkbox" id="checar6" class="letras checkbox" > Você concorda com nossos <a href="http://"
+                class="termosDeUso letras"> termos de uso
+              </a>.
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="d-flex justify-content-end mt-5 ">
+              <button class="btn  beneficio" id="btn6" value="20" disabled onclick="mostrarModal()">Usar
+                Benefício</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
     </div>
-  </footer>
+
+
+    <!--Fim dos cards sobre benefícios  -->
+
+
+    <!-- ***************** 3 PARTE -->
+
+
+    <!-- Empresas Parceiras -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <h1 class="text-center titulos"> Empresas Parceiras </h1>
+      </div>
+
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="img/Rectangle 19.png" class="img-responsive">
+        </div>
+      </div>
+
+
+      <!-- ********** PARTE 4 -->
+
+      <div class="container  mt-5">
+        <div class="row ">
+          <div class="col-sm-12 mb-3 col-lg-3 col-md-6 text-center   ">
+            <img src="img/techInAsia.png" class="img-responsive parceiros">
+          </div>
+          <div class="col-sm-12 mb-3 col-lg-2 col-md-6  text-center  ">
+            <img src="img/techCrunch.png" class="img-responsive parceiros2">
+          </div>
+
+          <div class="col-sm-12 mb-3 col-lg-2 col-md-6 text-center ">
+            <img src="img/e27.png" class="img-responsive parceiros">
+          </div>
+
+          <div class="col-sm-12 mb-3 col-lg-2 col-md-6 text-center  ">
+            <img src="img/cNet.png" class="img-responsive parceiros">
+          </div>
+
+          <div class="col-sm-12 mb-3 col-lg-2 col-md-12 text-center ">
+            <img src="img/businessInsider.png" class="img-responsive parceiros">
+          </div>
+
+        </div>
+      </div>
+      <!-- Fim das empresas Parceiras -->
+
+
+      <!-- Modais -->
+      <div class="modal" tabindex="-1" id="minhaModal" data-bs-backdrop="static">
+        <div class="modal-dialog modalCor modal-md">
+          <div class="modal-content">
+
+            <div class="container editar">
+              <div class="row minhaClasse">
+                <div class="col text-center editar letras  p-2">
+                  Leia antes de continuar
+                </div>
+              </div>
+            </div>
+            <h3 class=" mt-4 minhaClasse1 text-center letras p-">Confirma que deseja adicionar esse benefício?</h3>
+
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn disponibilidade1" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn ativar1" onclick="botaoDisponivel()"
+                data-bs-dismiss="modal">Aceito</button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="modal" tabindex="-1" id="minhaModal2" data-bs-backdrop="static">
+        <div class="modal-dialog modalCor modal-md">
+          <div class="modal-content">
+
+            <div class="container editar">
+              <div class="row minhaClasse">
+                <div class="col text-center editar letras  p-2">
+                  Leia antes de continuar
+                </div>
+              </div>
+            </div>
+            <h3 class=" mt-4 minhaClasse1 text-center letras p-">Seus Créditos acabaram :(</h3>
+
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn disponibilidade1" data-bs-dismiss="modal">Fechar</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Fim das Modais -->
+      <!-- Seção para Call to Action-->
+      <section class="container-fluid section-cac p-0">
+        <div class="row d-flex p-0">
+          <div class="col-lg-6 d-flex text-center p-0">
+            <h1>Faça sua doação agora mesmo!</h1>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center justify-content-center p-0">
+            <div class="d-flex btn-class p-0">
+              <input type="button" class="btn-full2" value="Cadastro">
+              <input type="button" class="btn-commum2" value="Entre">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="container-fluid p-0">
+        <div class="row-col-1 align-items-center text-center mb-0 mt-2 p-0">
+          <div class="col p-0">
+            <img src="img/LOGO_Prancheta 1 cópia 12 1.png" class="img-logo2">
+          </div>
+          <div class="col d-flex justify-content-center p-0">
+            <ul class="nav ">
+              <li class="nav-item">
+                <a class="nav-link active nav-footer" aria-current="page" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-footer" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-footer" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="p-0 mt-5">Feito com 💖 pelo time de desenvolvimento da Escambo. Todos os direitos reservados</p>
+
+        </div>
+
+        <div class="row d-flex gap-3 p-0" style="max-width:100%">
+          <div class="d-flex social-networks gap-3">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-medium"></i>
+            <i class="bi bi-whatsapp"></i>
+          </div>
+        </div>
+
+      </footer>
 
 
 
