@@ -49,32 +49,34 @@
 
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <img  src="img/LOGO_Prancheta 1 cópia 12 1.png"class="modal-title" id="staticBackdropLabel" style="max-width: 250px;">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img  src="img/LOGO_Prancheta 1 cópia 12 1.png"class="modal-title" id="staticBackdropLabel" style="max-width: 250px;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <h1> Acesse o Painel de Controle </h1>
+          <h4> Não possui acesso? <a href="cadastro.html" style="cursor: pointer; font-weight: bold; color: #4a276f;"> Cadastre aqui.</a> </h4>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Usuário" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
+          </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="reset" class="btn btn-secondary">Limpar</button>
+                  <a href="painel.html">
+                  <button type="button" class="btn btn-success">Entrar</button></a>
+                  </div>
+        </form>
     </div>
-    <div class="modal-body">
-      <form action="">
-        <h1>Acess</h1>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Usuário" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        
-        <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          <span class="input-group-text" id="basic-addon2">@exemplo.com</span>
-        </div>
-              </div>
-              <div class="modal-footer">
-        <button type="reset" class="btn btn-secondary">Limpar</button>
-        <a href="painel.html"><button type="button" class="btn btn-primary">Entrar</button></a>
-              </div>
-      </form>
   </div>
-</div>
 </div>
 
       <!-- Sessão carregada via jQuery no script -->
@@ -215,13 +217,13 @@
       <div class="col d-flex justify-content-center p-0">
         <ul class="nav ">
           <li class="nav-item">
-            <a class="nav-link active nav-footer" aria-current="page" href="#">Active</a>
+            <a class="nav-link active nav-footer" aria-current="page" href="quemsomos.html">Sobre nós</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-footer" href="#">Link</a>
+            <a class="nav-link nav-footer" href="cadastro.html">Cadastro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-footer" href="#">Link</a>
+            <a class="nav-link nav-footer" href="cadastro.html">Fale Conosco</a>
           </li>
         </ul>
       </div>
