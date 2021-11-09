@@ -47,6 +47,7 @@ var campo = {
       caixaModal("Senha inválida", "Repita a mesma senha dada")
       $("#senha").css("border-bottom", "1px solid red")
       $("#rsenha").css("border-bottom", "1px solid red")
+      return false
     }
     campoVazio = cont
     let s = cont>1?"s":""
@@ -55,7 +56,7 @@ var campo = {
     }else{
       let usuario = `${$("#nome").val()} ${$("#snome").val()}`
       localStorage.setItem("usuario", usuario)
-      caixaModal("Obrigado por se cadastrar!", `Você ganhou 70 pontos!\nClique <b><a href='painel.html'>AQUI</a></b> para usar seus pontos grátis!`,"","lime")
+      caixaModal("Obrigado por se cadastrar!", `Você ganhou 70 pontos! Clique <b><a href='painel.html'>AQUI</a></b> para usar seus pontos grátis!`,"","lime")
     }
   }
 }
