@@ -5,6 +5,7 @@ var saldoAtual = Number(document.getElementById("saldoAtual").innerText)
 
 // Função em que cada botão realiza o cálculo individualmente com o valor da carteira
 // se o valor da carteira estiver menor que o valor do crédito , chamo a função em que a modal avisa que os créditos são insuficientes
+document.getElementById("nomeUsuario").innerHTML = localStorage.getItem("usuario")
 function botaoDisponivel() {
   saldoAtual += - 20;
   document.getElementById("saldoAtual").innerHTML = saldoAtual;
