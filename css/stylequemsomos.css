@@ -37,7 +37,6 @@ body, button, input, select, textarea {
 
 .title{
     text-align: left;
-    font-size: 24px;
 }
 
 .gallery_product {
@@ -166,7 +165,6 @@ body, button, input, select, textarea {
 }
 
 
-
 /* RESPONSIVIDADE */
 /* large desktop */
 @media (min-width: 1440px){
@@ -185,10 +183,6 @@ body, button, input, select, textarea {
 /* small desktop */
 @media (max-width: 768px) {
 
-p{
-    font-size: 14px;
-}
-
 #alimentos, #moveis, #roupas{
     height: 150px;
 }
@@ -198,14 +192,6 @@ p{
     height: 320px;
     width: 100%;
     margin: 0 auto;
-}
-
-.card-title{
-    font-size: 16px;
-}
-
-.title {
-    font-size: 18px;
 }
 
 #opcoes {
@@ -218,6 +204,7 @@ p{
 
 }
 
+/* mobile */
 @media (max-width: 550px) {
 
 p{
@@ -229,12 +216,8 @@ p{
 }
 
 .title {
-    font-size: 24px;
+    /* font-size: 24px; */
     text-align: center;
-}
-
-.titulos{
-    font-size: 22px;
 }
 
 #opcoes{
@@ -273,7 +256,7 @@ p{
 .conteudoCard{
     width: 100%;
     margin: 0 auto;
-    height: 220px;
+    height: 300px;
 }
 
 .content{
@@ -291,7 +274,6 @@ p{
 }
 
 .texto{
-    font-size: 13px;
     color:white;
     left: 15%;
 }

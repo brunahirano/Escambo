@@ -27,7 +27,7 @@ var campo = {
         msg += "<li>"+nome.substr(0, 1).toUpperCase()+ nome.substr(1)+"\n"+"</li>"
         cont++
       // Tratamento do campo E-MAIL*
-      }else if (campo.todos[i].id =="email"){
+      }else if (campo.todos[i].id == "email"){
         if(campo.todos[i].value.match(/[A-Z a-z 0-9]+@[a-z]+\.[a-z]+/)){
           $(campo.todos[i]).css("border-bottom", "1px solid gray")
         }else{
@@ -43,9 +43,21 @@ var campo = {
       msg += "<li>"+nome.substr(0, 1).toUpperCase()+ nome.substr(1)+"\n"+"</li>"
       cont++
     }
+    if($("#senha").val() != $("#rsenha").val()){
+      caixaModal("Senha inválida", "Repita a mesma senha dada")
+      $("#senha").css("border-bottom", "1px solid red")
+      $("#rsenha").css("border-bottom", "1px solid red")
+      return false
+    }
     campoVazio = cont
     let s = cont>1?"s":""
-    cont>0?caixaModal(`Preencha ${campoVazio} campo${s} obrigatório${s}`, msg):caixaModal("Obrigado por se cadastrar!", "Formulário enviado com sucesso.","","lime")
+    if(cont>0){
+      caixaModal(`Preencha ${campoVazio} campo${s} obrigatório${s}`, msg)
+    }else{
+      let usuario = `${$("#nome").val()} ${$("#snome").val()}`
+      localStorage.setItem("usuario", usuario)
+      caixaModal("Obrigado por se cadastrar!", `Você ganhou 70 pontos! Clique <b><a href='painel.html'>AQUI</a></b> para usar seus pontos grátis!`,"","lime")
+    }
   }
 }
 $("#enviar").on("click", campo.validarForm )
@@ -86,7 +98,7 @@ function consultaCep() {
     let cepProcurado = cepDigitado.replace('-', '')
     console.log(cepProcurado)
 
-    fetch(`http://viacep.com.br/ws/${cepProcurado}/json`)
+    fetch(`https://viacep.com.br/ws/${cepProcurado}/json`)
       .then(response => {
         response.json()
         .then(data => console.log(apresentaDados(data)))
